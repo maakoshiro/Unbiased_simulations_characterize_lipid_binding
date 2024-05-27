@@ -1,9 +1,0 @@
-In this folder, the script used to run the unbiased lipid binding assay is provided
-
-To run it, first use CHARMM-GUI PDB Reader tool and untar the files in the same folder as workflow.sh
-
-Make sure to change the PDB ID in workflow.sh as well as the name of the lipid you want to test
-
-The script generates TPR files for one microsecond production of five replicas
-
-After the production simulations, a set of scripts for the analysis of the results is provided in the Analysis/ folder

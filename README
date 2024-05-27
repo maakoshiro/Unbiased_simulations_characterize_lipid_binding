@@ -1,0 +1,9 @@
+Supporting DATA files for "Unbiased MD simulations characterize lipid binding to lipid transfer proteins"
+
+Three different folders are provided:
+- Workflow/ contains all the necessary files to run the unbiased lipid binding assay for any protein of interest,
+including MDP files, GRO files of lipids, and the scripts with the protocol
+
+- Analysis/ gathers multiple scripts used for the analysis of the resullts, such as lipid tail solvation
+
+- Final_Frames/ contains the final frames of the simulations of all protein-lipid pairs in the manuscript

@@ -1,0 +1,11 @@
+Final frames of the simulation of all protein-lipid pairs in the manuscript
+
+In case variants/mutants of the same protein were simulated, they are located in separate folders
+
+- The notation is FL for full-length and DX for delta-X
+- Mutants are denoted as '_Mutant'
+
+The intermediate files of the multiple lipid binding assay of ESYT-2, Atg2 Chorein, and Vps13 Chorein are provided,
+with notation *2dop* for the final frame of the simulation with 2 lipids, *3dop" with 3 lipids, and so on
+
+For the simulation of big BLTPs with multiple lipids, only the final structure is given

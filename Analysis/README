@@ -5,3 +5,4 @@ All scripts call trajectories that have been previously centered using "trjconv.
 - "volmap.sh" is the script used to compute the volumetric density maps, it calls the volmap*tcl scripts
 - "xray_dist.sh" is the script used to compute the distance to the center of mass of the crystallographic ligands, it calls dist_xray*.tcl
 - "com_entry.sh" is the script used to extract the COM of the lipid along the trajectory, for studying lipid entry
+- "contacts.sh" is the script used to compute the contacts during the last 100 ns of the simulations

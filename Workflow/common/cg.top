@@ -1,8 +1,8 @@
-#include "/DATA/adaniel/software/Martini/martini_v3.0.0.itp"
-#include "/DATA/adaniel/software/Martini/martini_v3.0.0_ions_v1.itp"
-#include "/DATA/adaniel/software/Martini/martini_v3.0.0_phospholipids_v1.itp"
-#include "/DATA/adaniel/software/Martini/martini_v3.0.0_solvents_v1.itp"
-#include "/DATA/adaniel/software/Martini/martini_v3.0_sterols_v1.0.itp"
+#include "./common/martini_v3.0.0.itp"
+#include "./common/martini_v3.0.0_ions_v1.itp"
+#include "./common/martini_v3.0.0_phospholipids_v1.itp"
+#include "./common/martini_v3.0.0_solvents_v1.itp"
+#include "./common/martini_v3.0_sterols_v1.0.itp"
 #include "molecule_0.itp"
 
 [ system ]

@@ -21,4 +21,3 @@ martinize2 -f 250v-step1_pdbreader.pdb -x ${pdb}_cg_fc1000_eu8.pdb -o topol.top 
 #Inserting the CG protein in a cubic box with 2 nm of distance
 gmx editconf -f ${pdb}_cg_fc1000_eu8.pdb  -c -d 2.0 -bt cubic -o ${pdb}_cg_newbox.gro
 
-cp ./common/cg.top .

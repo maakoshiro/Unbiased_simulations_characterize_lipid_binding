@@ -2,7 +2,7 @@
 source /opt/GROMACS/2021.2/bin/GMXRC
 
 #Write the name of the PDB ID used for the protocol
-pdb=2yg2
+pdb=250v
 
 #Use CHARMM-GUI PDB Reader to prepare the PDB for the workflow
 #Untar the result, the workflow will use step1_pdbreader.pdb

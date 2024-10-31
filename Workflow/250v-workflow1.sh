@@ -1,5 +1,5 @@
 #Source the installed GROMACS in your workstation
-source /opt/GROMACS/2021.2/bin/GMXRC
+#source /opt/GROMACS/2021.2/bin/GMXRC
 
 #Write the name of the PDB ID used for the protocol
 pdb=250v

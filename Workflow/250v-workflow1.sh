@@ -28,7 +28,7 @@ gmx grompp -f ./common/min-vac.mdp -p cg.top -c ${pdb}_cg_newbox.gro -o min-vac.
 gmx mdrun -v -deffnm min-vac
 
 #Choose the lipids to apply the protocol to
-declare -a LipidArray=(dopc)
+declare -a LipidArray=("dopc" "chol" "dppc" "to" "olac" "dpsm")
 
 for lipid in ${LipidArray[@]}
 do

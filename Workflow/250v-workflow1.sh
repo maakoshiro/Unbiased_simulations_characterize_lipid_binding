@@ -24,7 +24,7 @@ gmx editconf -f ${pdb}_cg_fc1000_eu8.pdb  -c -d 2.0 -bt cubic -o ${pdb}_cg_newbo
 cp ~/protein/common/cg.top .
 
 #First minimization in vaccuum
-gmx grompp -f ./common/min-vac.mdp -p cg.top -c ${pdb}_cg_newbox.gro -o min-vac.tpr
+gmx grompp -f ~/protein/common/min-vac.mdp -p cg.top -c ${pdb}_cg_newbox.gro -o min-vac.tpr
 gmx mdrun -v -deffnm min-vac
 
 #Choose the lipids to apply the protocol to

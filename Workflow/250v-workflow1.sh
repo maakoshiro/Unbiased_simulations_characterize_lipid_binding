@@ -51,12 +51,12 @@ do
 
 	#Minimization
         gmx grompp -f ~/protein/common/min-vac.mdp -c ions_${lipid}_seed${replica}.gro -p ${lipid}_seed${replica}.top -o min-ions_${lipid}_seed${replica}.tpr
-        gmx mdrun -v -nt 4 -deffnm min-ions_${lipid}_seed${replica}
+        gmx mdrun -v -nt 5 -deffnm min-ions_${lipid}_seed${replica}
         gmx make_ndx -f  min-ions_${lipid}_seed${replica}.gro -o index_${lipid}_seed${replica}.ndx < ~/protein/common/input_prot_nonprot.txt
 
 	#Equilibration
         gmx grompp -f ~/protein/common/npt_eq.mdp -c min-ions_${lipid}_seed${replica}.gro -p ${lipid}_seed${replica}.top -o npt_eq_${lipid}_seed${replica}.tpr -n index_${lipid}_seed${replica}.ndx -r min-ions_${lipid}_seed${replica}.gro
-        gmx mdrun -nt 4 -v -deffnm npt_eq_${lipid}_seed${replica}
+        gmx mdrun -nt 5 -v -deffnm npt_eq_${lipid}_seed${replica}
 
 	#TPR for production is generated
         gmx grompp -f ~/protein/common/martini_v2.x_new-rf_3us.mdp -c  npt_eq_${lipid}_seed${replica}.gro -t npt_eq_${lipid}_seed${replica}.cpt -n index_${lipid}_seed${replica}.ndx -p ${lipid}_seed${replica}.top -o md_${lipid}_seed${replica}.tpr -maxwarn 1

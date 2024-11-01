@@ -28,9 +28,9 @@ gmx grompp -f ./common/min-vac.mdp -p cg.top -c ${pdb}_cg_newbox.gro -o min-vac.
 gmx mdrun -v -deffnm min-vac
 
 #Choose the lipids to apply the protocol to
-declare -a LipidArray=dopc
+#declare -a LipidArray=dopc
 
-for lipid in ${LipidArray[@]}
+for lipid in ${dopc[@]}
 do
 	#Five replicas
         for replica in `seq 1 5`

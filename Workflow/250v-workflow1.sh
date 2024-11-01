@@ -29,7 +29,7 @@ gmx mdrun -v -deffnm min-vac
 
 #Choose the lipids to apply the protocol to
 #declare -a LipidArray=("dopc") #"chol" "dppc" "to" "olac" "dpsm")
-LipidArray=("dopc")
+LipidArray="dopc"
 
 for lipid in ${LipidArray[@]}
 do

@@ -1,6 +1,6 @@
 #First minimization in vaccuum
-gmx grompp -f ./common/min-vac.mdp -p cg.top -c ${pdb}_cg_newbox.gro -o min-vac.tpr
-gmx mdrun -v -deffnm min-vac
+#gmx grompp -f ./common/min-vac.mdp -p cg.top -c ${pdb}_cg_newbox.gro -o min-vac.tpr
+#gmx mdrun -v -deffnm min-vac
 
 #Choose the lipids to apply the protocol to
 declare -a LipidArray=("dopc") #"chol" "dppc" "to" "olac" "dpsm")

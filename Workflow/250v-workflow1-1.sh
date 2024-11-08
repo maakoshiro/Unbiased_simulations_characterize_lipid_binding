@@ -24,8 +24,8 @@ martinize2 -f 250v-step1_pdbreader_his.pdb -x ${pdb}_cg_fc1000_eu8.pdb -o topol.
 cp ~/protein/common/cg.top .
 
 #First minimization in vaccuum
-#gmx grompp -f ~/protein/common/min-vac.mdp -p cg.top -c ${pdb}_cg_newbox.gro -o min-vac.tpr
-#gmx mdrun -v -deffnm min-vac
+gmx grompp -f ~/protein/common/min-vac.mdp -p cg.top -c ${pdb}_cg_newbox.gro -o min-vac.tpr
+gmx mdrun -v -deffnm min-vac
 
 #Choose the lipids to apply the protocol to
 declare -a LipidArray=("dopc") #"chol" "dppc" "to" "olac" "dpsm")

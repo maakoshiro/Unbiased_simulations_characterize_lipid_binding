@@ -30,6 +30,6 @@ do
         gmx mdrun -nt 4 -v -deffnm npt_eq_${lipid}_seed${replica}
 
 	#TPR for production is generated
-        #gmx grompp -f ~/protein/common/martini_v2.x_new-rf_3us.mdp -c  npt_eq_${lipid}_seed${replica}.gro -t npt_eq_${lipid}_seed${replica}.cpt -n index_${lipid}_seed${replica}.ndx -p ${lipid}_seed${replica}.top -o md_${lipid}_seed${replica}.tpr -maxwarn 1
+        gmx grompp -f ~/protein/common/martini_v2.x_new-rf_3us.mdp -c  npt_eq_${lipid}_seed${replica}.gro -t npt_eq_${lipid}_seed${replica}.cpt -n index_${lipid}_seed${replica}.ndx -p ${lipid}_seed${replica}.top -o md_${lipid}_seed${replica}.tpr -maxwarn 1
         done
 done
